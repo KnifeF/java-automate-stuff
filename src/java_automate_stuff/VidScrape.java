@@ -193,6 +193,8 @@ public class VidScrape
 			
 			// type enter to excecute the command
 			SCR.type(Key.ENTER);
+			// maximize browser
+			SCR.type(Key.UP, Key.WIN);
 			
 			try {
 				sleep(2, "sec");

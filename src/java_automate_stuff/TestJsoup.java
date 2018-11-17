@@ -70,6 +70,7 @@ public class TestJsoup {
 		// Creates a new Connection to a URL. Use to fetch and parse an HTML page.
 		// It will throw an IOException if an error occurs.
 		doc = Jsoup.connect(givenUrl)
+		.proxy(host, port) // sets an HTTP Proxy (HOST, PORT format)
 		.userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "  // sets the user-agent
 				+ "AppleWebKit/537.36 (KHTML, like Gecko) "
 				+ "Chrome/59.0.3071.115 Safari/537.36")
