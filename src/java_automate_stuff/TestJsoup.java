@@ -2,6 +2,8 @@ package java_automate_stuff;
 
 
 import java.io.IOException;
+import java.net.SocketTimeoutException;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -59,7 +61,7 @@ public class TestJsoup {
 	 * The main function. 
 	 * Using 'Jsoup' to parse a tags and p tags from a given url. 
 	 */
-	public static void main(String[] args) throws IOException 
+	public static void main(String[] args) throws IOException, SocketTimeoutException 
 	{
 		
 		String givenUrl = "https://jsoup.org/";  // url to get
